@@ -175,7 +175,7 @@ box-shadow: 2px 3px 10px 0px rgba(153,153,153,0.22);
     cursor:pointer;
 }
 
-.login .logInButton
+.login .button
 {
     background: var(--btnColor);
     color: var(--areaBgColor);
@@ -183,10 +183,12 @@ box-shadow: 2px 3px 10px 0px rgba(153,153,153,0.22);
     border-radius: 5px;
 }
 
-.login .logInButton:hover
+.login .button:hover
 {
     background: #4550e5;
+    cursor: pointer;
 }
+
 
 .bottomArea
 {

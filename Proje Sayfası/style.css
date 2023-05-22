@@ -1,0 +1,101 @@
+/*
+{
+    *
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: 0;
+} */
+
+html,body{
+    margin: 0;
+    background: #F7FAFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body *:not(style):not(script):not(div)
+{
+    all: unset;
+    
+}
+
+.container
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.calisma
+{
+    display: flex;
+    column-gap: 30px;
+}
+
+.calisma .calismaBilgi:first-child
+{
+    width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.calisma:not(:last-child) .calismaBilgi:first-child::after
+{
+    content: '';
+    width: 1px;
+    background: #4C7BEF;
+    display: block;
+    flex: 1;
+    background: repeating-linear-gradient(#4C7BEF 0 6px, transparent 6px 12px);
+
+}
+
+.calisma .calismaBilgi:last-child
+{
+    flex: 1;
+}
+
+.calisma .calismaBilgi:first-child .proje
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #4C7BEF;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    font-size: 15px;
+}
+
+.calisma .calismaBilgi:last-child h6
+{
+    display: block;
+    margin-bottom: 10px;
+    color: #4C7BEF;
+    font-weight: 600;
+}
+
+.calisma .calismaBilgi:last-child p
+{
+    display: block;
+    line-height: 150%;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.calisma .calismaBilgi .tarih
+{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 600;
+    color: #4C7BEF;
+    opacity: .8;
+}
+
